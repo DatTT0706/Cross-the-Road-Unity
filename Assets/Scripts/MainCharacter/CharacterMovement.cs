@@ -15,9 +15,20 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         Vec = transform.position;
-        Vec.y += Input.GetAxis("Jump") * Time.deltaTime * 20;
-        Vec.x += Input.GetAxis("Horizontal") * Time.deltaTime * 60;
-        //Vec.z += Input.GetAxis("Vertical") * Time.deltaTime * 20;
-        transform.position = Vec;
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Vec.y += 5;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            Vec.x -= 5;
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            Vec.x += 5;
+        }
+        //Vec.x += Input.GetKeyDown("Horizontal") * Time.deltaTime * 60;
+        
+        transform.position = Vector3.MoveTowards(transform.position ,Vec, 1);
     }
 }
