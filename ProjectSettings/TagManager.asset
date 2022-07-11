@@ -41,3 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 645060063
+    locked: 0
+  - name: Building
+    uniqueID: 562552129
+    locked: 0
+  - name: CrossRoad
+    uniqueID: 1633941263
+    locked: 0
+  - name: Signal
+    uniqueID: 3088454497
+    locked: 0
+  - name: Tree&Stuff
+    uniqueID: 4130999579
+    locked: 0
+  - name: Car
+    uniqueID: 491774879
+    locked: 0
