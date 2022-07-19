@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,12 +11,17 @@ public class GameController : MonoBehaviour
     public GameObject gameOverPanel,hubContainer,playerRef,playerCam;
     public bool isPlaying { get; private set; }
     public int countDown;
+<<<<<<< HEAD
     public Text countdownText, timeText, overGameText;
     private float startTime, elapsedTime;
     TimeSpan timePlaying;
     private Vector3 currentCamPosition;
     public float maxDistanceToShow;
     public List<GameObject> spawnList { get; private set; }
+=======
+    public Text countdownText;
+    public List<GameObject> spawnPoints;
+>>>>>>> master
 
     private void Awake()
     {
@@ -26,8 +32,12 @@ public class GameController : MonoBehaviour
     {
         spawnList = new List<GameObject>();
         isPlaying = false;
+<<<<<<< HEAD
         currentCamPosition = playerCam.transform.position;
         GetAllSpawnPoint();
+=======
+        spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint").ToList();
+>>>>>>> master
         StartCoroutine(CountToStart());
     }
 
