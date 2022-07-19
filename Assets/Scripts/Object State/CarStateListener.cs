@@ -16,7 +16,20 @@ public class CarStateListener : StateChangeListener
 
     public void OnCharacterStateChanged(ObjectState state)
     {
-
+        switch (state)
+        {
+            case ObjectState.INITIALIZED:
+                break;
+            case ObjectState.ACTIVE:
+                break;
+            case ObjectState.DEACTIVE:
+                break;
+            case ObjectState.DEAD:
+                GameObject.Destroy(car);
+                break;
+            default:
+                break;
+        }
     }
 
     public void OnDeactive()
