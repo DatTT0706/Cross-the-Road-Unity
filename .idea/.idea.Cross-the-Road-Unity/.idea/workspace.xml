@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bbf5e6c-bb19-4e02-9117-4ae1dd5d4cbf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross-the-Road-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross-the-Road-Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_2_32x32_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_2_32x32_1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_2_32x32_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_2_32x32_2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_2_32x32_3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_2_32x32_3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_32x32_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_32x32_1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_32x32_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_32x32_2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_32x32_3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_32x32_3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_32x32_4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_32x32_4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_3_32x32_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_3_32x32_1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_3_32x32_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_3_32x32_2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_3_32x32_3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Crosswalk_3_32x32_3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_10.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_11.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_12.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_8.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_2_32x32_9.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_4.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_5.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_6.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_7.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Road/Modern_Exteriors_Singles_Road_Lane_32x32_8.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +22,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "rider.run.widget.enabled.cache": "false",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Software\2020.3.25f1\Editor\Unity.exe" />
@@ -100,6 +71,8 @@
       <option name="presentableId" value="Default" />
       <updated>1657605653458</updated>
       <workItem from="1657605663229" duration="325000" />
+      <workItem from="1658233661333" duration="532000" />
+      <workItem from="1658237044227" duration="495000" />
     </task>
     <servers />
   </component>
