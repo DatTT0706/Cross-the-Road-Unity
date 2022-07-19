@@ -7,7 +7,7 @@ public class CarFactory : MonoBehaviour, ICarFactory
 {
 
     public GameObject endPoint;
-
+    public List<Car> cars;
 
     public Car buildBlueCar(Vector3 startPoint, Vector3 endPoint)
     {

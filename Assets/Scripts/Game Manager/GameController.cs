@@ -7,13 +7,15 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public static GameController instance;
-    public GameObject gameOverPanel,hubContainer,playerRef;
+    public GameObject gameOverPanel,hubContainer,playerRef,playerCam;
     public bool isPlaying { get; private set; }
     public int countDown;
     public Text countdownText, timeText, overGameText;
     private float startTime, elapsedTime;
     TimeSpan timePlaying;
-    
+    private Vector3 currentCamPosition;
+    public float maxDistanceToShow;
+    public List<GameObject> spawnList { get; private set; }
 
     private void Awake()
     {
@@ -22,7 +24,10 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        spawnList = new List<GameObject>();
         isPlaying = false;
+        currentCamPosition = playerCam.transform.position;
+        GetAllSpawnPoint();
         StartCoroutine(CountToStart());
     }
 
@@ -31,10 +36,12 @@ public class GameController : MonoBehaviour
     {
         if (isPlaying)
         {
+            currentCamPosition = playerCam.transform.position;
             elapsedTime = Time.time - startTime;
             timePlaying = TimeSpan.FromSeconds(elapsedTime);
             string playingTime = "Time:" + timePlaying.ToString("mm':'ss'.'ff");
             timeText.text = playingTime;
+            UpdateLaneCondition();
             if(playerRef == null)
             {
                 GameOver();
@@ -76,5 +83,59 @@ public class GameController : MonoBehaviour
         overGameText.text = timeText.text;
         gameOverPanel.SetActive(true);
         hubContainer.SetActive(false);
+    }
+
+    public void GetAllSpawnPoint()
+    {
+        spawnList.Clear();
+        GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("spawnPoint");
+        if (spawnPoints != null)
+        {
+            foreach (var spawnPoint in spawnPoints)
+            {
+                spawnList.Add(spawnPoint);
+            }
+        }
+    }
+
+    IEnumerator OnPreGameStart()
+    {
+        int initTime = 10;
+        while(initTime > 0)
+        {
+            yield return new WaitForSeconds(1f);
+            initTime--;
+        }
+        
+    }
+
+    private void UpdateLaneCondition()
+    {
+        if(spawnList.Count > 0)
+        {
+            foreach(var spawnPoint in spawnList)
+            {
+                if (IsLaneActive(spawnPoint))
+                {
+                    spawnPoint.GetComponent<CarFactory>().cars.ForEach(car =>
+                        car.gameObject.SetActive(true)
+                    );
+                    spawnPoint.SetActive(true);
+                }
+                else
+                {
+                    spawnPoint.GetComponent<CarFactory>().cars.ForEach(car =>
+                        car.gameObject.SetActive(false)
+                    );
+                    spawnPoint.SetActive(false);
+                }
+            }
+        }
+    }
+
+    private bool IsLaneActive(GameObject spawnPoint)
+    {
+        float distance = Mathf.Abs( spawnPoint.transform.position.y - currentCamPosition.y);
+        return (distance < maxDistanceToShow);
     }
 }
