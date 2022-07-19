@@ -11,17 +11,12 @@ public class GameController : MonoBehaviour
     public GameObject gameOverPanel,hubContainer,playerRef,playerCam;
     public bool isPlaying { get; private set; }
     public int countDown;
-<<<<<<< HEAD
     public Text countdownText, timeText, overGameText;
     private float startTime, elapsedTime;
     TimeSpan timePlaying;
     private Vector3 currentCamPosition;
     public float maxDistanceToShow;
-    public List<GameObject> spawnList { get; private set; }
-=======
-    public Text countdownText;
     public List<GameObject> spawnPoints;
->>>>>>> master
 
     private void Awake()
     {
@@ -30,14 +25,10 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnList = new List<GameObject>();
+        spawnPoints = new List<GameObject>();
         isPlaying = false;
-<<<<<<< HEAD
         currentCamPosition = playerCam.transform.position;
         GetAllSpawnPoint();
-=======
-        spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint").ToList();
->>>>>>> master
         StartCoroutine(CountToStart());
     }
 
@@ -97,15 +88,8 @@ public class GameController : MonoBehaviour
 
     public void GetAllSpawnPoint()
     {
-        spawnList.Clear();
-        GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag("spawnPoint");
-        if (spawnPoints != null)
-        {
-            foreach (var spawnPoint in spawnPoints)
-            {
-                spawnList.Add(spawnPoint);
-            }
-        }
+        spawnPoints.Clear();
+        spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint").ToList();
     }
 
     IEnumerator OnPreGameStart()
@@ -121,24 +105,16 @@ public class GameController : MonoBehaviour
 
     private void UpdateLaneCondition()
     {
-        if(spawnList.Count > 0)
+        if(spawnPoints.Count > 0)
         {
-            foreach(var spawnPoint in spawnList)
+            foreach(var spawnPoint in spawnPoints)
             {
-                if (IsLaneActive(spawnPoint))
-                {
-                    spawnPoint.GetComponent<CarFactory>().cars.ForEach(car =>
-                        car.gameObject.SetActive(true)
+                bool isActive = IsLaneActive(spawnPoint);
+                Console.WriteLine(spawnPoint.ToString() + isActive);
+                spawnPoint.GetComponent<CarFactory>().activeCars.ForEach(car =>
+                        car.gameObject.SetActive(isActive)
                     );
-                    spawnPoint.SetActive(true);
-                }
-                else
-                {
-                    spawnPoint.GetComponent<CarFactory>().cars.ForEach(car =>
-                        car.gameObject.SetActive(false)
-                    );
-                    spawnPoint.SetActive(false);
-                }
+                spawnPoint.SetActive(isActive);
             }
         }
     }

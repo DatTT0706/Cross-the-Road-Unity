@@ -7,13 +7,9 @@ public class CarFactory : MonoBehaviour, ICarFactory
 {
 
     public GameObject endPoint;
-<<<<<<< HEAD
-    public List<Car> cars;
-=======
+
     public List<GameObject> activeCars;
     public List<GameObject> inactiveCars;
-
->>>>>>> master
 
     public Car buildBlueCar(Vector3 startPoint, Vector3 endPoint, float speed)
     {
