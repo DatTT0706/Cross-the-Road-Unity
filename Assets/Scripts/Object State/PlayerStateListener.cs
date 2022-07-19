@@ -11,12 +11,28 @@ public class PlayerStateListener : StateChangeListener
         this.playerPrefs = playerPrefs;
     }
 
-    public void OnActive()
+    public void OnCharacterStateChanged(ObjectState state)
     {
-        throw new System.NotImplementedException();
+        switch (state)
+        {
+            case ObjectState.INITIALIZED:
+                OnInitialized();
+                break;
+            case ObjectState.ACTIVE:
+                OnActive();
+                break;
+            case ObjectState.DEACTIVE:
+                OnDeactive();
+                break;
+            case ObjectState.DEAD:
+                OnDead();
+                break;
+            default:
+                break;
+        }
     }
 
-    public void OnCharacterStateChanged(ObjectState state)
+    public void OnActive()
     {
         playerPrefs.SetActive(true);
     }

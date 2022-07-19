@@ -9,7 +9,7 @@ public class CharacterMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        StartCoroutine(Die(5));
     }
 
     // Update is called once per frame
@@ -19,6 +19,16 @@ public class CharacterMovement : MonoBehaviour
         {
             GetPlayerInput();
         }
+    }
+
+    IEnumerator Die(int i)
+    {
+        while(i > 0)
+        {
+            yield return new WaitForSeconds(1f);
+            i--;
+        }
+        GameObject.Destroy(gameObject);
     }
 
     public void GetPlayerInput()

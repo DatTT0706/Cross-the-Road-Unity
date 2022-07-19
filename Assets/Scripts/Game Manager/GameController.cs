@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,9 +7,13 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public static GameController instance;
-    public bool isPlaying;
+    public GameObject gameOverPanel,hubContainer,playerRef;
+    public bool isPlaying { get; private set; }
     public int countDown;
-    public Text countdownText;
+    public Text countdownText, timeText, overGameText;
+    private float startTime, elapsedTime;
+    TimeSpan timePlaying;
+    
 
     private void Awake()
     {
@@ -24,17 +29,29 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (isPlaying)
+        {
+            elapsedTime = Time.time - startTime;
+            timePlaying = TimeSpan.FromSeconds(elapsedTime);
+            string playingTime = "Time:" + timePlaying.ToString("mm':'ss'.'ff");
+            timeText.text = playingTime;
+            if(playerRef == null)
+            {
+                GameOver();
+            }
+        }
     }
 
     public void BeginGame()
     {
-        isPlaying=true;
+        isPlaying = true;
+        startTime = Time.time;
+
     }
 
     IEnumerator CountToStart()
     {
-        while(countDown > 0)
+        while (countDown > 0)
         {
             countdownText.text = countDown.ToString();
             yield return new WaitForSeconds(1f);
@@ -46,5 +63,18 @@ public class GameController : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
         countdownText.gameObject.SetActive(false);
+    }
+
+    public void GameOver()
+    {
+        isPlaying = false;
+        Invoke("GameOverScreen", 1f);
+    }
+
+    public void GameOverScreen()
+    {
+        overGameText.text = timeText.text;
+        gameOverPanel.SetActive(true);
+        hubContainer.SetActive(false);
     }
 }

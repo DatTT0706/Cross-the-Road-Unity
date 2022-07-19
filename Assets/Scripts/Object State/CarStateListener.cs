@@ -16,7 +16,23 @@ public class CarStateListener : StateChangeListener
 
     public void OnCharacterStateChanged(ObjectState state)
     {
-
+        switch (state)
+        {
+            case ObjectState.INITIALIZED:
+                OnInitialized();
+                break;
+            case ObjectState.ACTIVE:
+                OnActive();
+                break;
+            case ObjectState.DEACTIVE:
+                OnDeactive();
+                break;
+            case ObjectState.DEAD:
+                OnDead();
+                break;
+            default:
+                break;
+        }
     }
 
     public void OnDeactive()

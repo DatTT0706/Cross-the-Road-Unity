@@ -10,7 +10,14 @@ public class Character : MonoBehaviour
 
     public Rigidbody2D rb;
 
+    public CarStateListener carStateListener;
     Vector2 movement;
+
+    private void Awake()
+    {
+        carStateListener = GetComponent<CarStateListener>();
+        carStateListener.car = gameObject;
+    }
 
     void Update()
     {
@@ -31,4 +38,6 @@ public class Character : MonoBehaviour
     {
         rb.MovePosition(rb.position + movement * Speed * Time.fixedDeltaTime);
     }
+
+
 }
