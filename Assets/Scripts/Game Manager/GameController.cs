@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,6 +10,7 @@ public class GameController : MonoBehaviour
     public bool isPlaying;
     public int countDown;
     public Text countdownText;
+    public List<GameObject> spawnPoints;
 
     private void Awake()
     {
@@ -18,6 +20,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         isPlaying = false;
+        spawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint").ToList();
         StartCoroutine(CountToStart());
     }
 

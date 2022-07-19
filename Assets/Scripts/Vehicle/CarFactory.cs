@@ -8,7 +8,7 @@ public class CarFactory : MonoBehaviour, ICarFactory
 
     public GameObject endPoint;
     public List<GameObject> activeCars;
-    public List<GameObject> inActiveCars;
+    public List<GameObject> inactiveCars;
 
 
     public Car buildBlueCar(Vector3 startPoint, Vector3 endPoint, float speed)
@@ -119,8 +119,8 @@ public class CarFactory : MonoBehaviour, ICarFactory
 
     public void GenerateRandomCar(Vector3 startPoint, Vector3 endPoint, float speed)
     {
-        Debug.Log(inActiveCars.Count);
-        if (inActiveCars.Count<3)
+        
+        if (inactiveCars.Count<8)
         {
             int rand = Random.Range(1, 6);
             switch (rand)
@@ -148,10 +148,10 @@ public class CarFactory : MonoBehaviour, ICarFactory
             }
         } else
         {            
-            inActiveCars[0].transform.position = startPoint;
-            inActiveCars[0].SetActive(true);
-            inActiveCars.Remove(inActiveCars[0]);
-            activeCars.Add(inActiveCars[0]);
+            inactiveCars[0].transform.position = startPoint;
+            inactiveCars[0].SetActive(true);
+            inactiveCars.Remove(inactiveCars[0]);
+            activeCars.Add(inactiveCars[0]);
             
         }
         
@@ -162,12 +162,7 @@ public class CarFactory : MonoBehaviour, ICarFactory
     void Start()
     {
 
-        //this.buildBlueCar(gameObject.transform.position, endPoint.transform.position);
-        //this.buildCyanCar(gameObject.transform.position, endPoint.transform.position);
-        //this.buildGreyCar(gameObject.transform.position, endPoint.transform.position);
-        //this.buildOrangeCar(gameObject.transform.position, endPoint.transform.position);
-        //this.buildRedCar(gameObject.transform.position, endPoint.transform.position);
-        //this.buildTealCar(gameObject.transform.position, endPoint.transform.position);
+      
     }
 
     // Update is called once per frame

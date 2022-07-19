@@ -33,7 +33,7 @@ public class CarStateListener : MonoBehaviour, StateChangeListener
     public void OnDeactive()
     {       
         carFactory.activeCars.Remove(this.gameObject);
-        carFactory.inActiveCars.Add(this.gameObject); 
+        carFactory.inactiveCars.Add(this.gameObject); 
     }
 
     public void OnDead()
