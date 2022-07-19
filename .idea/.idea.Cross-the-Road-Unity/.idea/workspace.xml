@@ -4,10 +4,7 @@
     <list default="true" id="8bbf5e6c-bb19-4e02-9117-4ae1dd5d4cbf" name="Changes" comment="Add enter game event button">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross-the-Road-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross-the-Road-Unity/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/04B_30__.TTF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/04B_30__.TTF.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Fonts/04B_30__ SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Fonts/04B_30__ SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +24,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Scenes/GameMenu.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Sprites/Fonts/04B_30__ SDF.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
