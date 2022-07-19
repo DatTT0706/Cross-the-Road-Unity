@@ -6,7 +6,7 @@ public class Car : MonoBehaviour
 {
     [SerializeField]
     protected GameObject carPrefab;
-    protected float carSpeed;
+    public float carSpeed;
     public Vector3 startLoc;
     public Vector3 endLoc;
 
