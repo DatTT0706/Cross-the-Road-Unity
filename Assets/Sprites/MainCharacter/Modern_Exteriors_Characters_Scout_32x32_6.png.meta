@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 3632024d7234cd64693592845c37de97
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3453761607515320177
+    second: Modern_Exteriors_Characters_Scout_32x32_6_0
+  - first:
+      213: 2892122020084727364
+    second: Modern_Exteriors_Characters_Scout_32x32_6_1
+  - first:
+      213: -9182608762349644131
+    second: Modern_Exteriors_Characters_Scout_32x32_6_2
+  - first:
+      213: -4318084021547493158
+    second: Modern_Exteriors_Characters_Scout_32x32_6_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +101,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Modern_Exteriors_Characters_Scout_32x32_6_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1248
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80da25ed16c110d0800000000000000
+      internalID: -3453761607515320177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modern_Exteriors_Characters_Scout_32x32_6_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1248
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e3c3677a1e22820800000000000000
+      internalID: 2892122020084727364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modern_Exteriors_Characters_Scout_32x32_6_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1248
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9692c07bf1d09080800000000000000
+      internalID: -9182608762349644131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modern_Exteriors_Characters_Scout_32x32_6_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1248
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad81f59e5751314c0800000000000000
+      internalID: -4318084021547493158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
