@@ -276,10 +276,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1773532770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8da8a52dca6b3634b8c18be800c2bc43, type: 3}
+  m_Script: {fileID: 11500000, guid: 46acfa17df0b7df48bbcb2132d48bb7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endPoint: {fileID: 1350509108}
+  minSeperationTime: 1
+  maxSeperationTime: 4
+  leftPosition: {fileID: 1773532770}
+  rightPosition: {fileID: 1350509108}
+  objectSpeed: 5
+  carFactory: {fileID: 0}
 --- !u!1 &1835405270
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,6 +329,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 2009288689}
+  activeCars: []
+  inActiveCars: []
 --- !u!1 &2009288689
 GameObject:
   m_ObjectHideFlags: 0

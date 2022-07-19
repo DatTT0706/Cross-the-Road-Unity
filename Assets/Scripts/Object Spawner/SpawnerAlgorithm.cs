@@ -9,10 +9,13 @@ public class SpawnerAlgorithm : MonoBehaviour
     [SerializeField] private GameObject leftPosition;
     [SerializeField] private GameObject rightPosition;
     [SerializeField] private int objectSpeed;
+    [SerializeField] private CarFactory carFactory;
     // Start is called before the first frame update
     void Start()
     {
+
         StartCoroutine(SpawnObject());
+        carFactory = GameObject.FindObjectOfType<CarFactory>();
     }
 
     // Update is called once per frame
@@ -23,10 +26,9 @@ public class SpawnerAlgorithm : MonoBehaviour
 
     private IEnumerator SpawnObject() 
     {
-        yield return new WaitForSeconds(Random.Range(minSeperationTime,maxSeperationTime));
-        var startPosition = new GameObject(); 
+        var startPosition = new GameObject();
         var endPosition = new GameObject();
-        if(Random.Range(0,1) == 0)
+        if (Random.Range(0, 1) == 0)
         {
             startPosition = rightPosition;
             endPosition = leftPosition;
@@ -36,7 +38,15 @@ public class SpawnerAlgorithm : MonoBehaviour
             startPosition = leftPosition;
             endPosition = rightPosition;
         }
-        spawnFactory.SpawnObject(objectSpeed, startPosition, endPosition);
+
+        while (true)
+        {
+            yield return new WaitForSeconds(Random.Range(minSeperationTime, maxSeperationTime));
+            
+            //spawnFactory.SpawnObject(objectSpeed, startPosition, endPosition);
+            carFactory.GenerateRandomCar(startPosition.transform.position, endPosition.transform.position, objectSpeed);
+        }
+       
     }
 }
 

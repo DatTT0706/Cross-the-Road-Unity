@@ -9,21 +9,24 @@ public class Car : MonoBehaviour
     public float carSpeed;
     public Vector3 startLoc;
     public Vector3 endLoc;
-
     public GameObject CarPrefab
     {
         get { return carPrefab; }
     }
     void Start()
-    {
-        carSpeed = 5;
-        startLoc = gameObject.transform.position;
-        
+    {        
+
     }
 
     void Update()
     {
         float moveLim = carSpeed * Time.deltaTime;        
         transform.position = Vector3.MoveTowards(transform.position, endLoc, moveLim);
+        if(transform.position == endLoc)
+        {
+            
+            gameObject.SetActive(false);
+            gameObject.GetComponent<CarStateListener>().OnDeactive();
+        }
     }
 }

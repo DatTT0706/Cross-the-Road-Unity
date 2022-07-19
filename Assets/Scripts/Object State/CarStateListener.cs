@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarStateListener : StateChangeListener
+public class CarStateListener : MonoBehaviour, StateChangeListener
 {
     public GameObject car;
-    public CarStateListener(GameObject gameObject)
-    {
-        this.car = gameObject;
-    }
+    public CarFactory carFactory;
+   
     public void OnActive()
     {
         car.SetActive(true);
@@ -33,8 +31,9 @@ public class CarStateListener : StateChangeListener
     }
 
     public void OnDeactive()
-    {
-        car.SetActive(false);
+    {       
+        carFactory.activeCars.Remove(this.gameObject);
+        carFactory.inActiveCars.Add(this.gameObject); 
     }
 
     public void OnDead()
@@ -44,6 +43,6 @@ public class CarStateListener : StateChangeListener
 
     public void OnInitialized()
     {
-        
+
     }
 }

@@ -7,6 +7,8 @@ public class CarFactory : MonoBehaviour, ICarFactory
 {
 
     public GameObject endPoint;
+    public List<GameObject> activeCars;
+    public List<GameObject> inActiveCars;
 
 
     public Car buildBlueCar(Vector3 startPoint, Vector3 endPoint, float speed)
@@ -100,46 +102,60 @@ public class CarFactory : MonoBehaviour, ICarFactory
         return car;
     }
 
-    private static void buildGeneralCar(Vector3 startPoint, Vector3 endPoint, float speed, Car car)
+    private void buildGeneralCar(Vector3 startPoint, Vector3 endPoint, float speed, Car car)
     {
-        Debug.Log(car.CarPrefab);
         var creepPortal = Instantiate(
             car.CarPrefab,
             startPoint,
             Quaternion.identity
         );
         creepPortal.AddComponent<Car>();
+        creepPortal.AddComponent<CarStateListener>();
         creepPortal.GetComponent<Car>().endLoc = endPoint;
         creepPortal.GetComponent<Car>().carSpeed = speed;
-
+        creepPortal.GetComponent<CarStateListener>().carFactory= this;
+        activeCars.Add(creepPortal);
     }
 
     public void GenerateRandomCar(Vector3 startPoint, Vector3 endPoint, float speed)
     {
-        int rand = Random.Range(1, 6);
-        switch (rand)
+        Debug.Log(inActiveCars.Count);
+        if (inActiveCars.Count<3)
         {
-            case 1:
-                buildBlueCar(startPoint, endPoint, speed);
-                break;
-            case 2:
-                buildCyanCar(startPoint, endPoint, speed);
-                break;
-            case 3:
-                buildGreyCar(startPoint, endPoint, speed);
-                break;
-            case 4:
-                buildOrangeCar(startPoint, endPoint, speed);
-                break;
-            case 5:
-                buildRedCar(startPoint, endPoint, speed);
-                break;
-            case 6:
-                buildTealCar(startPoint, endPoint, speed);
-                break;
-            default:
-                break;
+            int rand = Random.Range(1, 6);
+            switch (rand)
+            {
+                case 1:
+                    buildBlueCar(startPoint, endPoint, speed);
+                    break;
+                case 2:
+                    buildCyanCar(startPoint, endPoint, speed);
+                    break;
+                case 3:
+                    buildGreyCar(startPoint, endPoint, speed);
+                    break;
+                case 4:
+                    buildOrangeCar(startPoint, endPoint, speed);
+                    break;
+                case 5:
+                    buildRedCar(startPoint, endPoint, speed);
+                    break;
+                case 6:
+                    buildTealCar(startPoint, endPoint, speed);
+                    break;
+                default:
+                    break;
+            }
+        } else
+        {            
+            inActiveCars[0].transform.position = startPoint;
+            inActiveCars[0].SetActive(true);
+            inActiveCars.Remove(inActiveCars[0]);
+            activeCars.Add(inActiveCars[0]);
+            
         }
+        
+        
     }
 
     // Start is called before the first frame update
@@ -157,6 +173,6 @@ public class CarFactory : MonoBehaviour, ICarFactory
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
