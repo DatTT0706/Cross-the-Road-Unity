@@ -47,8 +47,10 @@ public class SpawnerAlgorithm : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(minSeperationTime, maxSeperationTime));
-            
+
             //spawnFactory.SpawnObject(objectSpeed, startPosition, endPosition);
+
+            objectSpeed = 10;
             carFactory.GenerateRandomCar(startPosition.transform.position, endPosition.transform.position, objectSpeed);
         }
        
