@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bbf5e6c-bb19-4e02-9117-4ae1dd5d4cbf" name="Changes" comment="Add enter game event button">
+    <list default="true" id="8bbf5e6c-bb19-4e02-9117-4ae1dd5d4cbf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Cross-the-Road-Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Cross-the-Road-Unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/main_character.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/main_character.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game Manager/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game Manager/GameController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,15 +23,17 @@
     <option name="defaultAccountId" value="2683b3b1-66e3-4842-a815-ac93ce725ee2" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Prefabs/main_character.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Scenes/GameMenu.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Scenes/GameMenu.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Sprites/Fonts/04B_30__ SDF.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Sprites/Fonts/04B_30__ SDF.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Sprites/Fonts/04B_30__ SDF.asset" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Sprites/Fonts/04B_30__ SDF.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Scripts/Game Manager/GameController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Scripts/MainCharacter/CharacterMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/Assets/Scripts/Object State/CharacterState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chisk/Desktop/Cross-the-Road-Unity/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

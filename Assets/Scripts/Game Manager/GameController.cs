@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
     public static GameController instance;
-    public GameObject gameOverPanel,hubContainer,playerRef,playerCam;
+    public GameObject gameOverPanel, hubContainer, playerRef, playerCam;
     public bool isPlaying { get; private set; }
     public int countDown;
     public Text countdownText, timeText, overGameText;
@@ -22,6 +22,7 @@ public class GameController : MonoBehaviour
     {
         instance = this;
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,7 +44,7 @@ public class GameController : MonoBehaviour
             string playingTime = "Time:" + timePlaying.ToString("mm':'ss'.'ff");
             timeText.text = playingTime;
             UpdateLaneCondition();
-            if(playerRef == null)
+            if (playerRef == null)
             {
                 GameOver();
             }
@@ -54,7 +55,6 @@ public class GameController : MonoBehaviour
     {
         isPlaying = true;
         startTime = Time.time;
-
     }
 
     IEnumerator CountToStart()
@@ -95,25 +95,24 @@ public class GameController : MonoBehaviour
     IEnumerator OnPreGameStart()
     {
         int initTime = 10;
-        while(initTime > 0)
+        while (initTime > 0)
         {
             yield return new WaitForSeconds(1f);
             initTime--;
         }
-        
     }
 
     private void UpdateLaneCondition()
     {
-        if(spawnPoints.Count > 0)
+        if (spawnPoints.Count > 0)
         {
-            foreach(var spawnPoint in spawnPoints)
+            foreach (var spawnPoint in spawnPoints)
             {
                 bool isActive = IsLaneActive(spawnPoint);
                 Console.WriteLine(spawnPoint.ToString() + isActive);
                 spawnPoint.GetComponent<CarFactory>().activeCars.ForEach(car =>
-                        car.gameObject.SetActive(isActive)
-                    );
+                    car.gameObject.SetActive(isActive)
+                );
                 spawnPoint.SetActive(isActive);
             }
         }
@@ -121,7 +120,16 @@ public class GameController : MonoBehaviour
 
     private bool IsLaneActive(GameObject spawnPoint)
     {
-        float distance = Mathf.Abs( spawnPoint.transform.position.y - currentCamPosition.y);
+        float distance = Mathf.Abs(spawnPoint.transform.position.y - currentCamPosition.y);
         return (distance < maxDistanceToShow);
+    }
+
+    //chiskie
+    public void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("Player"))
+        {
+            GameOver();
+        }
     }
 }
