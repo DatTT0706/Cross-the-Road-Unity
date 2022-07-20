@@ -17,13 +17,16 @@ public class CarStateListener : MonoBehaviour, StateChangeListener
         switch (state)
         {
             case ObjectState.INITIALIZED:
+                OnInitialized();
                 break;
             case ObjectState.ACTIVE:
+                OnActive();
                 break;
             case ObjectState.DEACTIVE:
+                OnDeactive();
                 break;
             case ObjectState.DEAD:
-                GameObject.Destroy(car);
+                OnDead();
                 break;
             default:
                 break;
