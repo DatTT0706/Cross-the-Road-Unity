@@ -6,6 +6,7 @@ TagManager:
   tags:
   - spawnPoint
   - SpawnPoint
+  - Car
   layers:
   - Default
   - TransparentFX

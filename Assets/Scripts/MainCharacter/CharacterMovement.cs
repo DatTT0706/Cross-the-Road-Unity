@@ -20,6 +20,14 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.transform.tag=="Car")
+        {
+            GameController.instance.GameOver();
+        }
+    }
+
     public void GetPlayerInput()
     {
         Vec = transform.position;

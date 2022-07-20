@@ -330,7 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endPoint: {fileID: 2009288689}
   activeCars: []
-  inActiveCars: []
+  inactiveCars: []
 --- !u!1 &2009288689
 GameObject:
   m_ObjectHideFlags: 0

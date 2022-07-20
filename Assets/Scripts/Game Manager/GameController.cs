@@ -76,7 +76,8 @@ public class GameController : MonoBehaviour
     public void GameOver()
     {
         isPlaying = false;
-        Invoke("GameOverScreen", 1f);
+        playerRef.SetActive(false);
+        Invoke("GameOverScreen", .5f);
     }
 
     public void GameOverScreen()
